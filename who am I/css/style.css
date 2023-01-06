@@ -1,0 +1,555 @@
+@import url(reset.css);
+
+@font-face {
+  font-family: "Gmarket-m";
+  src: url(../font/GmarketSansTTFMedium.ttf);
+}
+@font-face {
+  font-family: "Gmarket-b";
+  src: url(../font/GmarketSansTTFBold.ttf);
+}
+@font-face {
+  font-family: "Gmarket-l";
+  src: url(../font/GmarketSansTTFlight.ttf);
+}
+
+/*
+배경색 : #dde9fb
+글자색 : #b3caec
+
+#a2cafd
+
+
+다크모드
+
+배경색 : 
+글자색 : 
+
+*/
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  font-family: 'Gmarket-m', sans-serif;
+}
+/*드래그 시 색상 변경*/
+*::selection {
+  background-color: #556b9c;
+  color: #ffffff;
+}
+
+/*header*/
+header{
+  width:100%;
+  height:auto;
+  position:fixed;
+  top:0;
+  z-index: 99999;
+  background-color: #fff;
+  
+}
+header #header-wrap{
+  width:90%;
+  height:auto;
+  margin:0 auto;
+  padding:20px;
+}
+header #header-wrap h1{
+  font-size:25px;
+  font-weight:600;
+  display:inline-block;
+  margin-right:30px;
+  
+}
+
+
+
+
+
+
+/*main*/
+main{
+  width:100%;
+  height:auto;
+  /* background-color: #a2cafd; */
+}
+main #wrap{
+  width:90%;
+  height:auto;
+  margin:0 auto;
+}
+/*맨 위 visual*/
+main #wrap .visual{
+  width:100%;
+  height:auto;
+}
+main #wrap .visual .visual-text-area{
+  padding:380px 0 200px;
+  margin: 0 0 180px 0;
+  display: flex;
+  justify-content: center;
+  /* border:1px solid red; */
+}
+main #wrap .visual .visual-text-area .text{
+  width:55%;
+  font-weight: 600;
+  font-size:50px;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: left;
+  line-height:1.25;
+}
+main #wrap .visual .visual-text-area .text img{
+  display: block;
+  width: 230px;
+  margin:0 40px 0 40px;
+}
+main #wrap .visual .visual-text-area .text .txt-title{
+  width: 620px;
+  margin-top: 30px;
+  font-size: 55px;
+  
+  line-height: 58px;
+}
+
+
+
+/*블라블라 내용 많은 곳 profile*/
+main .profile{
+  width:100%;
+  font-family: 'Gmarket-m', sans-serif;
+  align-items: center;
+  justify-items: center;
+}
+.s2-wrap{
+  width:100%;
+  display: inline-block;
+
+}
+main .profile h2{
+  font-family: 'Gmarket-b', sans-serif;
+  text-align: right;
+  font-size: 40px;
+  line-height: 1.74;
+  display:flex;
+  justify-content: center;
+  
+}
+.s2-wrap .image-box{
+  width:120px;
+  height:120px;
+}
+
+
+main .profile .intro-box{
+  padding:100px 0 80px;
+  margin: 0 0 20px 0;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  /* border:1px solid red; */
+}
+main .profile .intro-box .intro-h3-box{
+  width:100%;
+  display:flex;
+  justify-content:space-around ;
+  text-align: center;
+  /* border:1px solid black; */
+  margin:0 0 40px 0;
+}
+main .profile .intro-box .intro-h3-box h3{
+  width:30%;
+  font-family: 'Gmarket-m', sans-serif;
+  font-size:22px;
+  font-weight: 600;
+  color:#80A5F5;
+  /* border:1px solid blue; */
+}
+
+main .profile .intro-box .intro-p-box{
+  width:100%;
+  /* border:1px solid green; */
+  display:flex;
+  justify-content:space-around ;
+  text-align: center;
+  margin:0 0 20px 0;
+}
+main .profile .intro-box .intro-p-box .intro{
+  /* border:1px solid red; */
+  width:30%;
+  font-size:20px;
+  letter-spacing: -0.2px;
+  line-height: 1.95;
+  
+  font-family: 'Gmarket-l', sans-serif;
+}
+
+main .profile .intro-box .check{
+  width:30px;
+  vertical-align: middle;
+}
+
+
+main .profile .s2-largeText{
+  width:100%;
+  /* border:1px solid purple; */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .profile .s2-largeText .text-box{
+  width:50%;
+  font-size:40px;
+  margin-top:100px;
+  padding:30px 0;
+  line-height: 1.7;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  /* bordeR:1px solid red; */
+} 
+main .profile .s2-largeText .text-box .space-box{
+  width:50%;
+}
+
+main .profile .s2-largeText p:nth-child(2){
+  text-align: left;
+}
+main .profile .s2-largeText b{
+  font-size:75px;
+  font-weight: 700;
+  color:#80A5F5;
+}
+main .profile .img-box{
+  width:50%;
+}
+
+
+/*한마디로 알잘딱깔센*/
+.profile h4{
+  font-size:50px;
+  padding:30px 0;
+  margin:100px 0 50px;
+  text-align: center;
+}
+.profile h4 b{
+  color:#80A5F5;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+
+/*포폴 넣는 곳!!!! portfolio */
+main .portfolio{
+  width:100%;
+  height:auto;
+  border:0px solid black;
+  margin:0 auto;
+  padding-top:200px;
+}
+main .portfolio h2{
+  text-align: center;
+  padding:20px 0;
+  font-size:40px;
+  font-family: "Gmarket-b";
+  margin:20px 0 120px;
+}
+main .portfolio ul{
+  width:100%;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:50px;
+}
+main .portfolio ul li{
+  width:31%;
+  height:auto;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  
+  border-radius: 25px;
+  
+}
+main .portfolio ul li a{
+  cursor: pointer;
+  width:100%;
+  text-decoration: none;
+  border-radius: 25px;
+  color: #000;
+}
+main .portfolio a:hover{
+  font-weight: 700;
+  box-shadow: 5px 10px 5px #aaaaaa;
+
+}
+main .portfolio .img{
+  display:flex;
+  background-color:#80A5F5;
+  border-radius: 25px 25px 0 0 ;
+  width:100%;
+  height:200px;
+}
+main .portfolio dl{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  
+  background-color:#FBFBFB;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+}
+main .portfolio dt{
+  padding:20px 0;
+  font-size:20px;
+  font-weight: 600;
+}
+main .portfolio dd{
+  font-size:17;
+  padding:0 0 20px ;
+}
+
+
+
+
+
+
+
+
+/*댓글 css 시작 comment*/
+.comment-wrap{
+  border:0px solid gray;
+      width:100%;
+      padding-bottom:70px;
+      height:auto;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.comment-wrap section{
+  width:100%;
+  display:flex;
+  border:0px solid #80A5F5;
+  justify-content: space-around;
+  justify-items: center;
+  margin-bottom:50px;
+}
+.comment-wrap h2{
+  margin:0 auto;
+  padding:30px 0;
+  font-size:40px;
+  font-family: "Gmarket-b";
+  margin:20px 0 120px;
+}
+.comment-wrap .name{
+  width:20%;
+}
+.comment-wrap input{
+  width:60%;
+  height:50px;
+  border:2px solid #80A5F5;
+  border-radius: 25px;
+  font-size: 15px;
+}
+.comment-wrap input:active{
+  background-color: #fff;
+}
+
+.comment-wrap span{
+  margin:0 30px;
+  
+}
+.comment-wrap .itemAdd{
+  padding:0 30px;
+  border:2px solid #80A5F5;
+  border-radius: 25px;
+  color:#ffffff;
+  font-weight:600;
+  font-size:17px;
+  background-color: #80A5F5;
+  cursor: pointer;
+}
+.comment-wrap .itemAdd:hover{
+  color:#80A5F5;
+  font-weight:600;
+  background-color: #ffffff;
+}
+.comment-wrap ul{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.comment-wrap li{
+  width:100%;
+  padding:15px 0;
+  display:flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  border-bottom:2px solid #d6e2fc;
+}
+.comment-wrap .itemName{
+  width:20%;
+  text-align: center;
+  font-family: "Gmarket-b";
+}
+.comment-wrap .itemText{
+  width:60%;
+  font-family: "Gmarket-m";
+}
+.comment-wrap .itemDel{
+  padding:10px;
+  border-radius: 15px;
+  border:2px solid #80A5F5;
+  color:#ffffff;
+  background-color: #80A5F5;
+  font-weight: 700;
+  font-size:15px;
+  cursor: pointer;
+}
+.comment-wrap .itemDel:hover{
+  color:#80A5F5;
+  background-color: #ffff;
+}
+.comment-wrap .cmt-title{
+    background-color: #eceffe;
+}
+.comment-wrap .cmt-title b{
+  width:20%;
+  text-align: center;
+  font-family: "Gmarket-b";
+}
+.comment-wrap .cmt-title span{
+  width:67.5%;
+  font-family: "Gmarket-m";
+}
+/*댓글 css 끝!! comment*/
+
+
+/*footer 시작 !!! */
+footer{
+  background-color: #acb3cf;
+  display:flex;
+  justify-content: center;
+}
+footer .wrap{
+  width:90%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer h2{
+  margin:auto;
+  padding:30px 0;
+  font-size:40px;
+  font-family: "Gmarket-b";
+}
+footer ul{
+  width:50%;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:30px 0;
+}
+footer a{
+  color:#000;
+  text-decoration: none;
+}
+
+footer li{
+  font-size:15px;
+  border-radius: 40px;
+  width:80px;
+  height:80px;
+  text-align: center;
+}
+footer span{
+  text-align: center;
+  padding:30px 0 20px 0;
+  font-size:13px;
+}
+footer img{
+  width:75%;
+  vertical-align: middle;
+  padding:10px;
+}
+
+/*footer 끝!!!!!!!!*/
+
+
+
+
+
+/*dn_btn*/
+header #header-wrap #dn_btn{
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+  font-size:16px;
+  border:0px;
+  background-color: #80A5F5;
+  display: inline-block;
+  vertical-align: middle;
+  right:0;
+  color:#fff;
+  font-weight: 600;
+}
+header #header-wrap #dn_btn:hover{
+  background-color: #fff;
+  border:2px solid #80A5F5;
+  font-size:16px;
+  font-weight: 600;
+  cursor: pointer;
+  color:#80A5F5;
+}
+
+
+/*top_btn*/
+#top_btn{
+  width:60px;
+  height:60px;
+  border-radius: 30px;
+  font-size:16px;
+  position:fixed;
+  right:90px;
+  bottom:50px;
+  border:0px;
+  background-color: #80A5F5;
+  color:#fff;
+  font-weight: 600;
+}
+#top_btn:hover{
+  background-color: #fff;
+  border:2px solid #80A5F5;
+  cursor: pointer;
+  color:#80A5F5;
+}
+
+/*스크롤 바*/
+.bar-bg{
+  background-color: #dae8fc;
+  position: absolute;
+  width:100%;
+  height:5px;
+}
+.bar-ing{
+  background-color: #80A5F5;
+  width:100%;
+  position: absolute;
+  height:5px;
+  vertical-align: baseline;
+}
+
+/*comment*/

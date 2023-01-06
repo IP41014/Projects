@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="박동규-포트폴리오" />
+  <meta property="og:description" content="웹 포트폴리오 입니다." />
+  <meta property="og:image" content="./image/dog.jpg" />
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  
+  <script src="./js/top_btn.js"></script>
+  <script src="./js/scroll.js"></script>
+  
+  
+  <title>박동규</title>
+
+</head>
+<body>
+  <header>
+    <div id="header-wrap">
+      <h1 style="color:#80A5F5;">Isaac's Web Portfolio</h1>
+      <!-- darkmode -->
+      <input type="button"id="dn_btn" value="day" onclick="day_night_handler(this)">
+    </div>
+    <div class="bar-bg">
+      <span class="bar-ing"></span>
+    </div>
+  </header>
+  <main>
+    <div id="wrap">
+      <button onclick="moveToTop()"  id="top_btn" class="btn-moveTop">TOP</button>
+      <div class="visual">
+        <div class="visual-text-area">
+          <div class = "text">
+            <img src="./image/증명사진.jpg" alt="profile-img">
+            <h1 style="color:#80A5F5;"><p class="txt-title"></p></h1>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <section class="profile">
+        <div class="s2-wrap">
+          <h2 style="color:#80A5F5;">
+            저는 이런 사람입니다.
+          </h2>
+        </div>
+        
+        <div class="intro-box">
+          <div class="intro-h3-box">
+            <h3><img src="./image/check2.png" class="check" alt="check"> POSITIVE</h3>
+            <h3><img src="./image/check2.png" class="check" alt="check"> FRIENDLY</h3>
+            <h3><img src="./image/check2.png" class="check" alt="check"> CAPABILITY</h3>
+          </div>
+          <div class= "intro-p-box">
+            <p class="intro">
+              매사에 긍정적이며  <br />
+              쉽게 낙담하지 않습니다. <br />
+              (형들 아닌거 같아도 웃지 말아주세요)
+            </p>
+            
+            <p class="intro">
+              팀원과 소통하길 기대하고 <br />
+              타인의 의견을 잘 들어줍니다.
+            </p>
+            
+            <p class="intro">
+              가능한 일이라면 항상 도전합니다.<br />
+              무엇이든 결과를 낼 수 있도록 노력합니다.</p>
+          </div>
+          
+          
+        </div>
+
+        <div class='s2-largeText' >
+          <div class="text-box">
+            <div class="space-box"></div>
+            
+            <p>
+              <b>알</b>아서<br>
+              <b>잘</b><br>
+              <b>딱</b><br>
+              <b>깔</b>끔하고<br>
+              <b>센</b>스있는
+              </p>
+              
+          </div>
+          <div class="img-box">
+            <img src="./image/증명사진2.jpg" alt="profile-image" class="my-photo" width = 500>
+          </div>
+        </div>
+        <h4>
+          요즘말로 <b>알잘딱깔센!</b>
+        </h4>
+      </section>
+
+      <!-- 여기는 포폴 섹션입니다~~~~ -->
+      <section class="portfolio box1">
+        <h2 id = "sectionTitle">
+          제 작업물을 소개합니다!
+        </h2>
+        <ul>
+          <li>
+            <a href="https://www.naver.com" target="_blank">
+            <img class="img">
+            <dl>
+              <dt>제목입니다</dt>
+              <dd>이걸 누르면 naver로 이동합니다.</dd>
+              <dd>naver로 이동합니다.</dd>
+            </dl>
+          </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img class="img">
+              <dl>
+                <dt>제목입니다</dt>
+                <dd>이걸 누르면 유튜브로 이동합니다.</dd>
+                <dd>유튜브로 이동합니다.</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com" target="_blank">
+              <img class="img">
+              <dl>
+                <dt>제목입니다</dt>
+                <dd>이걸 누르면 구글로 이동합니다.</dd>
+                <dd>구글로 이동합니다.</dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="https://www.naver.com" target="_blank">
+            <img class="img">
+            <dl>
+              <dt>제목입니다</dt>
+              <dd>이걸 누르면 naver로 이동합니다.</dd>
+              <dd>naver로 이동합니다.</dd>
+            </dl>
+          </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img class="img">
+              <dl>
+                <dt>제목입니다</dt>
+                <dd>이걸 누르면 유튜브로 이동합니다.</dd>
+                <dd>유튜브로 이동합니다.</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com" target="_blank">
+              <img class="img">
+              <dl>
+                <dt>제목입니다</dt>
+                <dd>이걸 누르면 구글로 이동합니다.</dd>
+                <dd>구글로 이동합니다.</dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <!--댓글 시작-->
+      <div class="comment-wrap">
+        <h2 id = "sectionTitle" >댓글을 남겨주세요!</h2>
+        <section style="border:0px solid green;">
+          
+          <input type="text" class="name nickname" name="nickname" placeholder="   닉네임을 입력하세요.">
+          <input type="textarea" class="input" placeholder="   내용을 입력하세요.">
+          <button class="itemAdd">Add</button>
+      
+        </section>
+        <ul class="items">
+          <li class="item cmt-title">
+            <b class="itemName">이름</b>
+            <span class="itemText">내용</span>
+          </li>
+        </ul>
+      </div>
+      <!--댓글 끝-->
+
+
+      <!--추가 할 것 -->
+      
+      <div class="comment-wrap">
+        <h2 id = "sectionTitle" >추가사항</h2>
+        <h2 id = "sectionTitle" >폰트 디폴트 값은 CSS 참고해주세욤</h2>
+        <h2 id = "sectionTitle" >여백 남겨뒀어요. 디비전 나눠서 넣어주세요</h2>
+        
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <h2>Contact</h2>
+      <ul>
+        <a href="mailto:bdg1014@gmail.com" target="_blank"><li><img src="./image/mail.png" alt="mail">Email</li></a>
+        <a href="https://www.instagram.com/ehdrbya/" target="_blank"><li><img src="./image/insta.png" alt="instagram">Instagram</li></a>
+        <a href="https://github.com/bdg1014" target="_blank"><li><img src="./image/github.png" alt="github">Github</li></a>
+      </ul>
+
+      <span> &copy; 2022 Isaac from New Zealand</span>
+    </div>
+  </footer>
+
+  <script src="./js/comment.js"></script>
+  <script src="./js/text_typing.js"></script>
+  <script src="./js/darkmode.js"></script>
+
+
+</body>
+</html>
